@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/twice.css" />
+        <title>TWICEメンバーとのじゃんけん</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>TWICEメンバーとのじゃんけん</h1>
+        </header>
+        
+        <div>
+            <h2>誰とじゃんけんする？</h2>
+            <h3>⚠︎選ぶ時には心に出す手を決めておいてね！</h3>
+            <button type="button" onclick="janken(1)">NAYEON</button>
+            <button type="button" onclick="janken(2)">JEONGYEON</button>
+            <button type="button" onclick="janken(3)">MOMO</button>
+            <button type="button" onclick="janken(4)">SANA</button>
+            <button type="button" onclick="janken(5)">JIHYO</button>
+            <button type="button" onclick="janken(6)">MINA</button>
+            <button type="button" onclick="janken(7)">DAHYUN</button>
+            <button type="button" onclick="janken(8)">CHAEYOUNG</button>
+            <button type="button" onclick="janken(9)">TZUYU</button>
+        </div>
+        
+        <script src="js/test.js"></script>
+        
+        <div>
+                
+                <h4>挑戦者の証</h4>
+                
+                <form action="#" method="get">
+                    
+                    <p>
+                        <label for="last-name">姓：</label>  
+                        <input type="text" name="lastname" id="last-name" placeholder="姓" required />
+            
+                        <label>
+                            名：
+                            <input type="text" name="firstname" />
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" name="agreement" id="agreement" checked />
+                        <label for="agreement">プライバシーポリシーに同意する</label>
+                    </p>
+                    
+                    <p>
+                        <label><input type="radio" name="seibetsu" />女性</label>
+                        <label><input type="radio" name="seibetsu" />男性</label>
+                    </p>
+                    
+                    <p>
+                        <label for="requests">要望：</label>
+                        <textarea id="requests" name="requests" rows="8" cols="60"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="birthday">誕生日：</label>
+                        <input type="date" id="birthday" />
+                    </p>
+                    
+                    <p>
+                        <label>
+                            好きなメンバー：
+                            <input type="text" name="name" />
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <label>
+                            電話番号：
+                            <input type="tel" />
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="送信する" />
+                        <input type="reset" value="リセット" />
+                    </p>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+    
+</html>
